@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import StudentsData
 import requests
-# Create your views here.
+# Created my views here.
 
 def index(request):
     api_data = requests.get("http://localhost:8000/students/data/all").json()
